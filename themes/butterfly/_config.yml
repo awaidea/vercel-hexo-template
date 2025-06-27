@@ -17,7 +17,7 @@ nav:
   fixed: false
 
 menu:
-  # Home: / || fas fa-home
+   Home: / || fas fa-home
   # List||fas fa-list:
   #   Music: /music/ || fas fa-music
   #   Movie: /movies/ || fas fa-video
@@ -65,13 +65,13 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: https://t.alcy.cc/acg
 
 # The banner image of archive page
-archive_img:
+archive_img: https://t.alcy.cc/acg
 
 # Note: tag page, not tags page
-tag_img:
+tag_img: https://t.alcy.cc/acg
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -87,7 +87,7 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: true
 
 # Website Background
 # Can set it to color or image url
