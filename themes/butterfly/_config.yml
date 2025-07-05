@@ -11,16 +11,20 @@
 
 nav:
   # Navigation bar logo image
-  logo:
+  logo: https://file.catp.cc/avatar.png
   display_title: true
   # Whether to fix navigation bar
   fixed: false
 
 menu:
-   Home: / || fas fa-home
-  # List||fas fa-list:
-  #   Music: /music/ || fas fa-music
-  #   Movie: /movies/ || fas fa-video
+  Home: / || fas fa-home
+  Archives: /archives/ || fas fa-archive
+  Tags: /tag/ || fas fa-tags
+  Categories: /cate/ || fas fa-folder-open
+  List||fas fa-list:
+    Times: /times/ || fas fa-comment
+  Link: /link/ || fas fa-link
+  About: /about/ || fas fa-heart
 
 # --------------------------------------
 # Code Blocks Settings
@@ -109,8 +113,8 @@ error_img:
 
 # A simple 404 page
 error_404:
-  enable: false
-  subtitle: 'Page Not Found'
+  enable: true
+  subtitle: 'Waah,So delicious! But the page you are looking for is not here.'
   background: /img/error-page.png
 
 post_meta:
@@ -284,10 +288,10 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/awaidea
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 'I am hungry, so I need to eat something. If you have any questions, please contact me.'
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -357,7 +361,7 @@ rightside_bottom:
 
 # Conversion between Traditional and Simplified Chinese
 translate:
-  enable: false
+  enable: true
   # The text of a button
   default: 繁
   # the language of website (1 - Traditional Chinese/ 2 - Simplified Chinese）
@@ -415,7 +419,7 @@ copy:
   enable: true
   # Add the copyright information after copied content
   copyright:
-    enable: false
+    enable: true
     limit_count: 150
 
 # Need to install the hexo-wordcount plugin
@@ -647,7 +651,7 @@ artalk:
 chat:
   # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
-  use:
+  use: chatra
   # Chat Button [recommend]
   # It will create a button in the bottom right corner of website, and hide the origin button
   rightside_button: false
@@ -656,7 +660,7 @@ chat:
 
 # https://chatra.io/
 chatra:
-  id:
+  id: o7PBRivdvx8FMz8G3
 
 # https://www.tidio.com/
 tidio:
