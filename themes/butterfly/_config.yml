@@ -90,7 +90,7 @@ category_img:
 # Format:
 #  - category name: xxxxx
 category_per_img:
-
+ 
 # The background image of footer
 footer_img: true
 
@@ -105,7 +105,7 @@ cover:
   archives_enable: true
   # When cover is not set, the default cover is displayed
   default_cover:
-     - https://t.alcy.cc/fj
+     - /img/banner.png
 
 # Replace Broken Images
 error_img:
