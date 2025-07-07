@@ -244,15 +244,15 @@ post_pagination: 1
 
 # Displays outdated notice for a post
 noticeOutdate:
-  enable: false
+  enable: true
   # Style: simple / flat
   style: flat
   # When will it be shown
   limit_day: 365
   # Position: top / bottom
   position: top
-  message_prev: It has been
-  message_next: days since the last update, the content of the article may be outdated.
+  message_prev: 小心！这篇文章已经
+  message_next: 天没更新过了, 里面的内容已经生虫了，请选择性查看。
 
 # --------------------------------------
 # Footer Settings
@@ -261,7 +261,7 @@ footer:
   owner:
     enable: true
     since: 2025
-  custom_text:
+  custom_text: <img src="https://s2.loli.net/2025/07/07/uJvz9VCfOMaiqkP.png"></img><a herf="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">Support By UPYUN</a>
   # Copyright of theme and framework
   copyright: true
 
