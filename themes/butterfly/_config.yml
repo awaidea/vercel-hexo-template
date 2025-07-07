@@ -261,7 +261,7 @@ footer:
   owner:
     enable: true
     since: 2025
-  custom_text: <div style="text-align:center;margin:50px 0"><a href="https://www.upyun.com" target="_blank" title="又拍云"><img src="/img/upyun.png" height="50" style="vertical-align:middle"></a> <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云为本站提供提供CDN/云存储服务</a></div>
+  custom_text: <div style="text-align:center;margin:50px 0"><a href="https://www.upyun.com" target="_blank" title="又拍云"><img src="http://ec-pb.test.upcdn.net/%E5%8F%88%E6%8B%8D%E4%BA%91_logo4.png" height="50" style="vertical-align:middle"></a> <a href="https://www.upyun.com/?utm_source=lianmeng&utm_medium=referral">又拍云为本站提供提供CDN/云存储服务</a></div>
   # Copyright of theme and framework
   copyright: true
 
