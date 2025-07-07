@@ -52,6 +52,7 @@ social:
   fab fa-github: https://github.com/awaidea || Github || '#24292e'
   fas fa-envelope: mailto:i@catp.cc || Email || '#4a7dbe'
 
+
 # --------------------------------------
 # Image Settings
 # --------------------------------------
@@ -156,7 +157,7 @@ subtitle:
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option: 1
+  typed_option: false
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -164,7 +165,7 @@ subtitle:
   # 1 - hitokoto.cn
   # 2 - https://api.aa1.cn/doc/yiyan.html
   # 3 - jinrishici.com
-  source: false
+  source: true
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub: 说时依旧，有泪如倾。
 
