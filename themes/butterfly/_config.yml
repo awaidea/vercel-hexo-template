@@ -156,7 +156,7 @@ subtitle:
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option: 2
+  typed_option: 1
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -166,7 +166,7 @@ subtitle:
   # 3 - jinrishici.com
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  sub: 说时依旧，有泪如倾。
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
