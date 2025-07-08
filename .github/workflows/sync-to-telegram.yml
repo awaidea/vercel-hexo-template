@@ -1,0 +1,173 @@
+name: Sync Hexo Posts to Telegram with Retry
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'source/_posts/**'
+
+jobs:
+  sync-posts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10  # 设置超时时间
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: |
+        npm install -g hexo-cli
+        npm install cheerio marked front-matter axios
+
+    - name: Get and render latest post
+      id: render-post
+      run: |
+        # 获取最新的文章文件
+        LATEST_POST=$(git diff --name-only HEAD~1 HEAD -- source/_posts/ | head -n 1)
+        
+        if [ -z "$LATEST_POST" ]; then
+          echo "No new posts detected."
+          echo "has_new_post=false" >> $GITHUB_OUTPUT
+          exit 0
+        fi
+        
+        echo "Processing post: $LATEST_POST"
+        echo "has_new_post=true" >> $GITHUB_OUTPUT
+        
+        # 提取文章标题
+        TITLE=$(grep -m 1 '^title:' "$LATEST_POST" | cut -d ':' -f 2- | sed -e 's/^[[:space:]]*//' -e 's/"//g')
+        echo "title=$TITLE" >> $GITHUB_OUTPUT
+        
+        # 获取 Netlify 网站URL
+        SITE_URL="${{ secrets.NETLIFY_SITE_URL }}"
+        
+        # 从文件名生成文章路径
+        POST_SLUG=$(basename "$LATEST_POST" .md | sed 's/^....-..-..-//')
+        POST_URL="$SITE_URL/$(date +%Y/%m/%d)/$POST_SLUG/"
+        echo "post_url=$POST_URL" >> $GITHUB_OUTPUT
+        
+        # 使用Node.js渲染Markdown内容并提取图片
+        RENDERED_CONTENT=$(node <<EOF
+        const fs = require('fs');
+        const marked = require('marked');
+        const frontMatter = require('front-matter');
+        const cheerio = require('cheerio');
+        
+        // 配置marked
+        marked.setOptions({
+          breaks: true,
+          gfm: true
+        });
+        
+        try {
+          // 读取Markdown文件
+          const mdContent = fs.readFileSync('$LATEST_POST', 'utf8');
+          const content = frontMatter(mdContent);
+          
+          // 渲染Markdown为HTML
+          const htmlContent = marked.parse(content.body);
+          const \$ = cheerio.load(htmlContent);
+          
+          // 提取第一张图片
+          let firstImage = '';
+          const imgElement = \$('img').first();
+          if (imgElement.length > 0) {
+            firstImage = imgElement.attr('src');
+            // 处理相对路径
+            if (firstImage && !firstImage.startsWith('http')) {
+              firstImage = new URL(firstImage, '$SITE_URL').href;
+            }
+          }
+          
+          // 生成纯文本摘要
+          const excerpt = \$.text().substring(0, 500) + '...';
+          
+          console.log(\`excerpt=\${excerpt}\`);
+          console.log(\`image_url=\${firstImage}\`);
+        } catch (error) {
+          console.error('Error processing post:', error);
+          process.exit(1);  // 退出并报错，触发重试机制
+        }
+        EOF
+        )
+
+    - name: Send to Telegram with retry
+      if: steps.render-post.outputs.has_new_post == 'true'
+      continue-on-error: true  # 允许步骤失败以进行重试
+      run: |
+        MAX_RETRY=3
+        RETRY_DELAY=10  # 重试间隔(秒)
+        
+        for ((i=1; i<=$MAX_RETRY; i++)); do
+          echo "Attempt $i to send message to Telegram"
+          
+          # 构建消息内容
+          MESSAGE="🚀 *${{ steps.render-post.outputs.title }}*"
+          
+          if [ -n "${{ steps.render-post.outputs.excerpt }}" ]; then
+            MESSAGE="$MESSAGE\n\n${{ steps.render-post.outputs.excerpt }}"
+          fi
+          
+          MESSAGE="$MESSAGE\n\n[阅读全文](${{ steps.render-post.outputs.post_url }})"
+          
+          # 如果有图片，使用带图片的API
+          if [ -n "${{ steps.render-post.outputs.image_url }}" ]; then
+            echo "Sending with photo..."
+            RESPONSE=$(curl -s -X POST \
+              -H "Content-Type: application/json" \
+              -d '{
+                "chat_id": "'"${{ secrets.TELEGRAM_CHANNEL_ID }}"'",
+                "photo": "'"${{ steps.render-post.outputs.image_url }}"'",
+                "caption": "'"$(echo -e $MESSAGE | sed 's/"/\\"/g')"'",
+                "parse_mode": "Markdown"
+              }' \
+              "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendPhoto")
+          else
+            echo "Sending without photo..."
+            RESPONSE=$(curl -s -X POST \
+              -H "Content-Type: application/json" \
+              -d '{
+                "chat_id": "'"${{ secrets.TELEGRAM_CHANNEL_ID }}"'",
+                "text": "'"$(echo -e $MESSAGE | sed 's/"/\\"/g')"'",
+                "parse_mode": "Markdown"
+              }' \
+              "https://api.telegram.org/bot${{ secrets.TELEGRAM_BOT_TOKEN }}/sendMessage")
+          fi
+          
+          # 检查响应
+          if echo "$RESPONSE" | grep -q '"ok":true'; then
+            echo "Message sent successfully"
+            exit 0
+          else
+            echo "Error sending message: $RESPONSE"
+            if [ $i -lt $MAX_RETRY ]; then
+              echo "Waiting $RETRY_DELAY seconds before retry..."
+              sleep $RETRY_DELAY
+            fi
+          fi
+        done
+        
+        echo "Failed to send message after $MAX_RETRY attempts"
+        exit 1
+
+    - name: Notify failure
+      if: failure() && steps.render-post.outputs.has_new_post == 'true'
+      uses: actions/github-script@v6
+      with:
+        script: |
+          const { owner, repo } = context.repo;
+          await github.rest.issues.createComment({
+            owner,
+            repo,
+            issue_number: context.payload.after ? context.payload.commits[0].id : context.runId,
+            body: '⚠️ Failed to send post to Telegram after multiple attempts. Please check the workflow run.'
+          });
