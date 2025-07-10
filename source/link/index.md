@@ -3,7 +3,7 @@ date: '2025-07-06T22:17:49+08:00'
 excerpt: Friend's links         Apply for Apursuer's friend chain 基本要求  有一个完整的可访问的地址 不允许像CSDN这一类的博客（博客园除外 添加本站地址 没有违反中华人民共和国法律的内容，没有黄、赌、毒内容（重要）  这是加分项  支持IPV6 自托管域名后没有端口 域名后缀位于公共域名列表中（非常规域名除外，比如“.手机”、“.移动”或者这样...
 title: 友情链接
 type: link
-updated: '2025-07-10T11:59:06.581+08:00'
+updated: '2025-07-10T12:00:06.381+08:00'
 ---
 # Friend's links
 
@@ -12,7 +12,7 @@ updated: '2025-07-10T11:59:06.581+08:00'
 
 <script src="https://unpkg.com/qexo-static@1.6.0/hexo/friends.js"></script>
 
-<script>loadQexoFriends("qexo-friends", "https://qexo.apursuer.com")</script>
+<script>loadQexoFriends("qexo-friends", "https://panel.catp.cc")</script>
 
 # Apply for Apursuer's friend chain
 
