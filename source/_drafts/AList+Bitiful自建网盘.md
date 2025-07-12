@@ -20,7 +20,7 @@ tags: []
 title: AList+Bitiful自建网盘
 top_img: null
 type: null
-updated: '2025-07-12T10:02:36.696+08:00'
+updated: '2025-07-12T10:07:12.005+08:00'
 ---
 > Huang1111盘的5TB的免费空间没了，呜呜呜～
 
@@ -43,13 +43,19 @@ updated: '2025-07-12T10:02:36.696+08:00'
 # 注册ClawCloudRun
 
 - 官网[ClawCloudRun](https://run.claw.cloud)
-----------------
+
+---
+
 - 1. 点那个Get Started for free
      ![截屏 2025-07-12 09.37.18.png](https://bgithub.xyz/awaidea/pics/raw/main/25/7/8b651f150388349e0ae380350f52d4fd.png)
 - 2. 用你超过180天的GitHub账号登录
      ![IMG_3980.jpg](https://bgithub.xyz/awaidea/pics/raw/main/25/7/169a9a2482cd4b70731340cf46851be8.jpg)
 - 3. 登录之后区域建议选Japan，更稳定一点，然后进入
      ![截屏 2025-07-12 09.50.52.png](https://bgithub.xyz/awaidea/pics/raw/main/25/7/f5b088206614fde436c4093cc0a03184.png)
+- 4. 打开App Store，搜索list，可以看到有两个结果
+- 5. 选择AList但更也可以使用OpenList
+
+> AList上个月被收购了，OpenList是它的开源继任者，但AList比opl稳定是真的，CCR更推荐用AList商业化前的最后版本
 
 ---
 
