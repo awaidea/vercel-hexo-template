@@ -2,11 +2,11 @@
 date: '2025-06-07T22:17:49+08:00'
 excerpt:       
 title: 说说
-updated: '2025-07-12T13:34:28.327+08:00'
+updated: '2025-07-12T14:37:41.519+08:00'
 ---
 <script
   type="text/javascript"
-  src="//cdn.jsdelivr.net/gh/Uyoahz26/daodao@main/dist/qexo-dao.min.js"
+  src="https://cdn.jsdelivr.net/gh/Uyoahz26/daodao@main/dist/qexo-dao.min.js"
   charset="utf-8"
 ></script>
 
@@ -18,7 +18,8 @@ updated: '2025-07-12T13:34:28.327+08:00'
       name: "EdgeCat",
       limit: 10,
       fromColor: "#000000",
-      useLoadingImg: false,
+      useLoadingImg: true,
+      loadingimg: "https://file.catp.cc/sample.gif"
       baseURL: "https://panel.catp.cc",
       format: "yyyy年MM月dd日"
     })
