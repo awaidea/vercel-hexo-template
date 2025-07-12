@@ -1,30 +1,11 @@
 ---
 date: '2025-06-07T22:17:49+08:00'
-excerpt:       
+excerpt:         
 title: 说说
-updated: '2025-07-12T14:39:51.406+08:00'
+updated: '2025-07-12T14:45:45.013+08:00'
 ---
-<script
-  type="text/javascript"
-  src="https://cdn.jsdelivr.net/gh/Uyoahz26/daodao@main/dist/qexo-dao.min.js"
-  charset="utf-8"
-></script>
-
-<script>
-  qexoDaodao
-    ?.init({
-      el: "#qexo",
-      avatar: "https://file.catp.cc/avatar.png",
-      name: "EdgeCat",
-      limit: 10,
-      fromColor: "#000000",
-      useLoadingImg: true,
-      loadingimg: "https://file.catp.cc/sample.gif"
-      baseURL: "https://panel.catp.cc",
-      format: "yyyy年MM月dd日"
-    })
-    .then(function () {
-      console.log("Loading successful")
-    })
-</script>
+<div id="qexot" class="tag-plugin timeline"></div>
+<script src="https://gcore.jsdelivr.net/gh/MSCMDD/Qexo-Talks@main/Stellar/qexo_talk.js"></script>
+<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/MSCMDD/Qexo-Talks@main/Stellar/qexo_talk.css">
+<script>showQexoTalks("qexot", "https://panel.catp.cc", 5)</script>
 
