@@ -7,7 +7,7 @@ comments: null
 cover: https://alistgo.com/logo.svg
 date: null
 description: null
-excerpt:  Huang1111盘的5TB的免费空间没了，呜呜呜～  准备工作  一个注册时间超过180天的GitHub账号 一个手机号 一个域名  注册Bitiful    打开Bitiful官网 Bitiful      注册/登录      先搞个桶     注册ClawCloudRun  官网ClawCloudRun   点那个Get Started for free      用你超过180天的Gi...
+excerpt:  Huang1111盘的5TB的免费空间没了，呜呜呜～  准备工作  一个注册时间超过180天的GitHub账号 一个手机号 一个域名  注册Bitiful    打开Bitiful官网 Bitiful      注册/登录      先搞个桶     注册ClawCloudRun  官网ClawCloudRun      点那个Get Started for free      用你超过180天...
 highlight_shrink: null
 katex: null
 keywords: null
@@ -20,7 +20,7 @@ tags: []
 title: AList+Bitiful自建网盘
 top_img: null
 type: null
-updated: '2025-07-12T09:54:40.179+08:00'
+updated: '2025-07-12T10:02:36.696+08:00'
 ---
 > Huang1111盘的5TB的免费空间没了，呜呜呜～
 
@@ -43,6 +43,7 @@ updated: '2025-07-12T09:54:40.179+08:00'
 # 注册ClawCloudRun
 
 - 官网[ClawCloudRun](https://run.claw.cloud)
+----------------
 - 1. 点那个Get Started for free
      ![截屏 2025-07-12 09.37.18.png](https://bgithub.xyz/awaidea/pics/raw/main/25/7/8b651f150388349e0ae380350f52d4fd.png)
 - 2. 用你超过180天的GitHub账号登录
