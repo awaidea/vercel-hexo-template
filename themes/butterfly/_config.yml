@@ -1037,6 +1037,7 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
     - <script defer src="/live2d-widget/autoload.js"></script>
+    - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.css" media="print" onload="this.media='all'">
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
