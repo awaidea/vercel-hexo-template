@@ -20,7 +20,7 @@ tags: []
 title: AList+Bitiful自建网盘
 top_img: null
 type: null
-updated: '2025-07-13T09:24:03.778+08:00'
+updated: '2025-07-13T10:26:29.794+08:00'
 ---
 > Huang1111盘的5TB的免费空间没了，呜呜呜～
 
@@ -67,4 +67,14 @@ updated: '2025-07-13T09:24:03.778+08:00'
 ---
 
 # 配置AList
+
+- 1. 先改密码和用户名
+- 2. 切换到存储页，点击添加，驱动选S3
+- 3. 回到BitiFul
+- 4. 先点击桶，切换到桶信息
+- 5. 复制桶名、Endpoint和Region到你的AList中
+- 6. 在Bitiful侧边栏中切换到Accesskey选项卡
+- 7. 新建子用户
+- 8. 复制Ak和Sk到AList中
+- 9. 设置挂载路径，保存完事
 
