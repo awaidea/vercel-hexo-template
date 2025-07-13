@@ -20,7 +20,7 @@ tags: []
 title: AList+Bitiful自建网盘
 top_img: null
 type: null
-updated: '2025-07-12T10:07:12.005+08:00'
+updated: '2025-07-13T09:24:03.778+08:00'
 ---
 > Huang1111盘的5TB的免费空间没了，呜呜呜～
 
@@ -53,9 +53,18 @@ updated: '2025-07-12T10:07:12.005+08:00'
 - 3. 登录之后区域建议选Japan，更稳定一点，然后进入
      ![截屏 2025-07-12 09.50.52.png](https://bgithub.xyz/awaidea/pics/raw/main/25/7/f5b088206614fde436c4093cc0a03184.png)
 - 4. 打开App Store，搜索list，可以看到有两个结果
-- 5. 选择AList但更也可以使用OpenList
+- 5. 选择AList（但也可以使用OpenList）
 
 > AList上个月被收购了，OpenList是它的开源继任者，但AList比opl稳定是真的，CCR更推荐用AList商业化前的最后版本
 
+- 6. 先在那里设置好密码，然后点右上角的Deploy
+- 7. 回到主页，点App Launchpad，这时候你就能看到你的AList实例，点进去
+- 8. 点击Update
+- 9. 找到Network，点后面的Custom Domain
+- 10. 按要求做完之后保存重启（设置好DNS后先等一会儿再点确认）
+- 11. 这时候它会自动返回并重启，接下来看到你的域名旁边的字变成Available就部署成功了
+
 ---
+
+# 配置AList
 
