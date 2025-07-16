@@ -262,7 +262,7 @@ footer:
   owner:
     enable: true
     since: 2025
-  custom_text: [![Netlify Status](https://api.netlify.com/api/v1/badges/bf724f15-7a37-47aa-9372-98e50c28f94b/deploy-status)](https://app.netlify.com/projects/edgecat/deploys)
+  custom_text: 
   # Copyright of theme and framework
   copyright: true
 
