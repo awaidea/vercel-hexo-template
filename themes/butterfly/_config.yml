@@ -781,9 +781,9 @@ preloader:
   # source
   # 1. fullpage-loading
   # 2. pace (progress bar)
-  source: 2
+  source: 1
   # pace theme (see https://codebyzach.github.io/pace/)
-  pace_css_url: https://file.catp.cc/flash.css
+  pace_css_url:
 
 # Page Transition
 enter_transitions: true
