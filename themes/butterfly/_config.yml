@@ -1040,6 +1040,7 @@ inject:
     - <script defer src="/live2d-widget/autoload.js"></script>
     - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.css" media="print" onload="this.media='all'">
     - <script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script>
+    - <script src="https://yremp.live/wp-content/uploads/resource/js/sakura.js"></script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
