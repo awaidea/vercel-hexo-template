@@ -1036,6 +1036,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.css" media="print" onload="this.media='all'">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.css">
   bottom:
     # - <script src="xxxx"></script>
     - <script defer src="/live2d-widget/autoload.js"></script>
