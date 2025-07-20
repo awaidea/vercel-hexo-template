@@ -35,7 +35,7 @@ code_blocks:
   theme: ocean
   macStyle: true
   # Code block height limit (unit: px)
-  height_limit: 128px
+  height_limit: 128
   word_wrap: false
 
   # Toolbar
