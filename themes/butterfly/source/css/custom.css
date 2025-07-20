@@ -136,3 +136,11 @@
 [data-theme="dark"] #article-container code {
   background: rgba(0, 0, 0, 0.3) !important;
 }
+
+/* 在线链接服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: 'hexo';  /* Project id 4979438 */
+  src: url('//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.woff2?t=1752999187614') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.woff?t=1752999187614') format('woff'),
+       url('//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.ttf?t=1752999187614') format('truetype');
+}
