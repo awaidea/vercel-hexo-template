@@ -74,39 +74,65 @@
 
 #footer #footer-wrap a {
     color: var(--font-color);
-}
-/* 通用卡片亚克力效果（无阴影） */
-.card-widget, 
-.recent-post-item, 
-#aside-content .card-widget, 
-#category .card-category, 
-#tag .card-tag, 
-#archive .card-archive, 
-#card-toc {
-  background: rgba(255, 255, 255, 0.15) !important;
+}/* ===== 全局卡片亚克力效果 ===== */
+.card-widget,
+.recent-post-item,
+#aside-content .card-widget,
+#category .card-category,
+#tag .card-tag,
+#archive .card-archive,
+#card-toc,
+#article-container, /* 新增：文章容器 */
+#article-container .post-content, /* 新增：文章正文 */
+#article-container .flink-list-item /* 友链卡片 */ {
+  /* 基础亚克力效果 */
   backdrop-filter: blur(10px) saturate(150%) !important;
   -webkit-backdrop-filter: blur(10px) saturate(150%) !important;
-  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
 
-/* 深色模式适配 */
+/* ===== 浅色模式（亮白通透） ===== */
+:root:not([data-theme="dark"]) .card-widget,
+:root:not([data-theme="dark"]) .recent-post-item,
+:root:not([data-theme="dark"]) #card-toc,
+:root:not([data-theme="dark"]) #article-container, /* 文章浅色模式 */
+:root:not([data-theme="dark"]) #article-container .post-content {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* ===== 深色模式（深邃沉浸） ===== */
 [data-theme="dark"] .card-widget,
 [data-theme="dark"] .recent-post-item,
-[data-theme="dark"] #card-toc {
-  background: rgba(15, 15, 15, 0.3) !important;
+[data-theme="dark"] #card-toc,
+[data-theme="dark"] #article-container, /* 文章深色模式 */
+[data-theme="dark"] #article-container .post-content {
+  background: rgba(10, 10, 10, 0.6) !important;
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-/* 内容背景透明 */
+/* ===== 内容背景透明 ===== */
 .card-widget > div:not([style*="background"]),
-.recent-post-item .recent-post-info {
+.recent-post-item .recent-post-info,
+#article-container .post-content > *:not([style*="background"]) {
   background: transparent !important;
 }
 
-/* 特殊元素处理 */
+/* ===== 特殊元素处理 ===== */
 .tag-cloud a,
 #article-container .flink .flink-list-item {
-  background: rgba(255, 255, 255, 0.1) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
   border: none !important;
+}
+
+/* ===== 文章内代码块优化（避免模糊影响可读性） ===== */
+#article-container pre,
+#article-container code {
+  backdrop-filter: none !important; /* 代码块不模糊 */
+  background: rgba(0, 0, 0, 0.1) !important; /* 轻微半透明 */
+}
+[data-theme="dark"] #article-container pre,
+[data-theme="dark"] #article-container code {
+  background: rgba(0, 0, 0, 0.3) !important;
 }
