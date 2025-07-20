@@ -17,7 +17,7 @@ nav:
   fixed: false
 
 menu:
-  Home: / || fas fa-home
+  Home: / || hexo 
   Archives: /archives/ || fas fa-archive
   Tags: /tag/ || fas fa-tags
   Categories: /cate/ || fas fa-folder-open
@@ -1036,7 +1036,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/custom.css">
     - <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.7.0/style.css" media="print" onload="this.media='all'">
-    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4979438_kxuwkr9bjo7.css">
   bottom:
     # - <script src="xxxx"></script>
     - <script defer src="/live2d-widget/autoload.js"></script>
