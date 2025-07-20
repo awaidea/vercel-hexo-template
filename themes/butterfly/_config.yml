@@ -17,14 +17,14 @@ nav:
   fixed: false
 
 menu:
-  Home: / || hexo 
-  Archives: /archives/ || fas fa-archive
-  Tags: /tag/ || fas fa-tags
-  Categories: /cate/ || fas fa-folder-open
-  List||fas fa-list:
-    Times: /times/ || fas fa-comment
-  Link: /link/ || fas fa-link
-  About: /about/ || fas fa-heart
+  Home: / || ec shouye
+  Archives: /archives/ || ec guidang
+  Tags: /tag/ || ec biaoqian
+  Categories: /cate/ || ec fenlei
+  List||ec liebiao:
+    Times: /times/ || ec shequzhongxin
+  Link: /link/ || ec lianjiepinjie1
+  About: /about/ || ec aixin
 
 # --------------------------------------
 # Code Blocks Settings
