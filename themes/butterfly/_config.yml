@@ -32,10 +32,10 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: light
-  macStyle: false
+  theme: ocean
+  macStyle: true
   # Code block height limit (unit: px)
-  height_limit: false
+  height_limit: 128px
   word_wrap: false
 
   # Toolbar
@@ -157,7 +157,7 @@ subtitle:
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option: false
+  typed_option: 1
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -372,7 +372,7 @@ translate:
   # The text of the button when the language is Simplified Chinese
   msgToTraditionalChinese: '繁'
   # The text of the button when the language is Traditional Chinese
-  msgToSimplifiedChinese: '簡'
+  msgToSimplifiedChinese: '简'
 
 # Read Mode
 readmode: true
@@ -987,7 +987,7 @@ snackbar:
 
 # Instant.page
 # https://instant.page/
-instantpage: false
+instantpage: true
 
 # Lazyload
 # https://github.com/verlok/vanilla-lazyload
