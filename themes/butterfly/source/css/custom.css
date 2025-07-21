@@ -144,3 +144,106 @@
        url('//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.woff?t=1752999187614') format('woff'),
        url('//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.ttf?t=1752999187614') format('truetype');
 }
+/* ===== 仅对 Markdown 容器应用亚克力效果，不影响内部文字 ===== */
+/* 文章正文容器 */
+#article-container,
+.post-content,
+/* 评论容器（适配 Valine / Gitalk / Twikoo） */
+.comments,
+.vwrap,
+.vcard,
+.vcontent,
+.gt-container,
+.gt-comment-content,
+.twikoo-comment-container {
+  /* 亚克力背景（不影响内部文字） */
+  background: rgba(255, 255, 255, 0.7) !important;
+  backdrop-filter: blur(10px) saturate(150%) !important;
+  -webkit-backdrop-filter: blur(10px) saturate(150%) !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding: 1.5rem !important; /* 增加内边距，避免内容紧贴边缘 */
+  margin: 1rem 0 !important; /* 增加外边距，避免粘连 */
+}
+
+/* 深色模式适配 */
+[data-theme="dark"] #article-container,
+[data-theme="dark"] .post-content,
+[data-theme="dark"] .comments,
+[data-theme="dark"] .vwrap,
+[data-theme="dark"] .vcard,
+[data-theme="dark"] .vcontent,
+[data-theme="dark"] .gt-container,
+[data-theme="dark"] .gt-comment-content,
+[data-theme="dark"] .twikoo-comment-container {
+  background: rgba(10, 10, 10, 0.6) !important;
+  border: 1px solid rgba(255, 255, 255, 0.05) !important;
+}
+
+/* ===== 确保文字、标题、列表等内容不受背景影响 ===== */
+/* 标题（保持默认样式） */
+#article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4,
+#article-container h5,
+#article-container h6,
+.comments h1,
+.comments h2,
+.comments h3,
+.comments h4,
+.comments h5,
+.comments h6 {
+  background: transparent !important;
+  color: inherit !important; /* 继承主题默认颜色 */
+  border-bottom: none !important; /* 移除可能存在的边框 */
+}
+
+/* 段落文字（透明背景，避免影响可读性） */
+#article-container p,
+.comments p,
+#article-container li,
+.comments li,
+#article-container a,
+.comments a {
+  background: transparent !important;
+  color: inherit !important; /* 继承主题默认颜色 */
+}
+
+/* 代码块（取消模糊，保持轻微半透明） */
+#article-container pre,
+#article-container code,
+.comments pre,
+.comments code {
+  backdrop-filter: none !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[data-theme="dark"] #article-container pre,
+[data-theme="dark"] #article-container code,
+[data-theme="dark"] .comments pre,
+[data-theme="dark"] .comments code {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 表格（轻微半透明，不影响文字） */
+#article-container table,
+.comments table {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+[data-theme="dark"] #article-container table,
+[data-theme="dark"] .comments table {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* 引用块（轻微背景，不影响文字） */
+#article-container blockquote,
+.comments blockquote {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-left: 3px solid rgba(255, 255, 255, 0.3) !important;
+}
+[data-theme="dark"] #article-container blockquote,
+[data-theme="dark"] .comments blockquote {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-left: 3px solid rgba(255, 255, 255, 0.1) !important;
+}
