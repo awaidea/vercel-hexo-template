@@ -157,7 +157,7 @@ subtitle:
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
-  typed_option: 1
+  typed_option:
   # Source - Call the third-party service API (Chinese only)
   # It will show the source first, then show the content of sub
   # Choose: false/1/2/3
@@ -167,7 +167,7 @@ subtitle:
   # 3 - jinrishici.com
   source: true
   # If you close the typewriter effect, the subtitle will only show the first line of sub
-  sub:
+  sub: 说时依旧，有泪如倾
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -262,7 +262,7 @@ footer:
   owner:
     enable: true
     since: 2025
-  custom_text: 
+  custom_text: <a href="https://evolution-host.com/">Best hosting -> Evolution Host</a>
   # Copyright of theme and framework
   copyright: true
 
