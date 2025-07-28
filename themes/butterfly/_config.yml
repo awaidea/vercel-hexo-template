@@ -67,16 +67,16 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img: https://api.catp.cc/gif/eoc
+default_top_img: https://eveonecat.cn/gif/tmb/0134.gif
 
 # The banner image of index page
-index_img: https://api.catp.cc/gif/eoc
+index_img: https://eveonecat.cn/gif/tmb/0134.gif
 
 # The banner image of archive page
-archive_img: https://api.catp.cc/gif/eoc
+archive_img: https://eveonecat.cn/gif/tmb/0134.gif
 
 # Note: tag page, not tags page
-tag_img: https://api.catp.cc/gif/eoc
+tag_img: https://eveonecat.cn/gif/tmb/0134.gif
 
 # The banner image of tag page, you can set the banner image for each tag
 # Format:
@@ -96,7 +96,7 @@ footer_img: true
 
 # Website Background
 # Can set it to color or image url
-background: https://api.catp.cc/gif/eoc
+background: https://eveonecat.cn/gif/tmb/0134.gif
 
 cover:
   # Disable the cover or not
