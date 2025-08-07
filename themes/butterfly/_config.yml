@@ -19,8 +19,8 @@ nav:
 menu:
   Home: / || ec shouye
   Archives: /archives/ || ec guidang
-  Tags: /tag/ || ec biaoqian
-  Categories: /cate/ || ec fenlei
+  Tags: /tags/ || ec biaoqian
+  Categories: /categories/ || ec fenlei
   List||ec liebiao:
     Times: /times/ || ec shequzhongxin
   Link: /link/ || ec lianjiepinjie1
