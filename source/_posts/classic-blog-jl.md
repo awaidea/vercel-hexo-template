@@ -5,7 +5,7 @@ aside: null
 categories: []
 comments: null
 cover: https://ts1.tc.mm.bing.net/th/id/OIP-C.Dd8ssS0xls3lj7WkCQluPQHaD5?cb=thfc1&dpr=2&pid=ImgDetMain
-date: null
+date: '2025-08-08T11:10:58.666+08:00'
 description: null
 excerpt:  抽象玩意  起因  第六代博客 一说到第六代博客，我就想到了Markdown语法写的有多重要 当时偷懒，又不想用Hexo，于是试图用Markdown写网站 当时才发现Markdown语法有多重要，因为GHP内置的JL可以直接渲染Markdown页面！ 这可能是学习成本最低的建站方法了吧😅  这是我之前写的一段话，而今天聊的主角就是它  特性  毫无技术含量 使用难 再（低）开发 没主题 没插件...
 highlight_shrink: null
@@ -20,20 +20,20 @@ tags: []
 title: 一个神奇的博客“框架”
 top_img: null
 type: null
-updated: '2025-08-08T11:02:00.050+08:00'
+updated: '2025-08-08T16:11:59.716+08:00'
 ---
 > 抽象玩意
 
 # 起因
 
 > 第六代博客
-> 
+>
 > 一说到第六代博客，我就想到了Markdown语法写的有多重要
-> 
+>
 > 当时偷懒，又不想用Hexo，于是试图用Markdown写网站
-> 
+>
 > 当时才发现Markdown语法有多重要，因为GHP内置的JL可以直接渲染Markdown页面！
-> 
+>
 > 这可能是学习成本最低的建站方法了吧😅
 
 这是我之前写的一段话，而今天聊的主角就是它
@@ -76,6 +76,7 @@ Fork [这个仓库](https://github.com/awaidea/WinterCat)
 3. 改作者名和关于页
 4. 写文章时手动加入文章、标签和分类列表
 5. 把Giscus替换掉，比如替换为Twikoo
+
 ```html
 <div id="tcomment"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.min.js"></script>
@@ -95,4 +96,3 @@ twikoo.init({
 不能说好用，只能说抽象
 
 ~~**一坨大便**~~
-
