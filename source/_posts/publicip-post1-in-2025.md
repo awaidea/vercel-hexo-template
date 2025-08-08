@@ -22,7 +22,7 @@ tags:
 title: IPv4互联网可用性检查
 top_img: null
 type: null
-updated: '2025-08-08T16:01:23.203+08:00'
+updated: '2025-08-08T16:03:32.694+08:00'
 ---
 > IPv4，又是老生常谈的问题
 
