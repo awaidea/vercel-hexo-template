@@ -74,8 +74,9 @@ Fork [这个仓库](https://github.com/awaidea/WinterCat)
 1. 改仓库名为网站标题
 2. 改index.md顶部html标签来解决图标问题
 3. 改作者名和关于页
-4. 把Giscus替换掉，比如替换为Twikoo
-
+4. 写文章时手动加入文章、标签和分类列表
+5. 把Giscus替换掉，比如替换为Twikoo
+```html
 <div id="tcomment"></div>
 <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.min.js"></script>
 <script>
