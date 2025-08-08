@@ -1030,6 +1030,7 @@ structured_data: true
 css_prefix: true
 
 feed:
+  enable: true
   type: rss2                //你可以选择 atom 或 rss2（atom好像有问题，建议用rss2）。
   path: rss2.xml            //生成的 RSS 文件的路径。可以使用 atom.xml 或 rss2.xml。
   limit: 20                 //限制显示的文章数量，默认是 20 篇文章。
