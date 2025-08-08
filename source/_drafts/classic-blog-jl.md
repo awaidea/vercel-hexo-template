@@ -20,7 +20,7 @@ tags: []
 title: 一个神奇的博客“框架”
 top_img: null
 type: null
-updated: '2025-08-08T10:43:41.792+08:00'
+updated: '2025-08-08T11:02:00.050+08:00'
 ---
 > 抽象玩意
 
@@ -67,4 +67,31 @@ updated: '2025-08-08T10:43:41.792+08:00'
 # 安装
 
 Fork [这个仓库](https://github.com/awaidea/WinterCat)
+在Pages中设置从main部署
+
+# 使用指南
+
+1. 改仓库名为网站标题
+2. 改index.md顶部html标签来解决图标问题
+3. 改作者名和关于页
+4. 把Giscus替换掉，比如替换为Twikoo
+
+<div id="tcomment"></div>
+<script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.min.js"></script>
+<script>
+twikoo.init({
+  envId: '您的环境id', // 腾讯云环境填 envId；Vercel 环境填地址（https://xxx.vercel.app）
+  el: '#tcomment', // 容器元素
+  // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，腾讯云环境填 ap-shanghai 或 ap-guangzhou；Vercel 环境不填
+  // path: location.pathname, // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+  // lang: 'zh-CN', // 用于手动设定评论区语言，支持的语言列表 https://github.com/twikoojs/twikoo/blob/main/src/client/utils/i18n/index.js
+})
+</script>
+```
+
+# 后记
+
+不能说好用，只能说抽象
+
+~~**一坨大便**~~
 
