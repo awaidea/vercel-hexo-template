@@ -7,7 +7,7 @@ comments: null
 cover: https://ts3.tc.mm.bing.net/th/id/OIP-C.ETErxtwUHRrqwwtDUhJQwwHaEK?dpr=2&pid=ImgDetMain
 date: null
 description: null
-excerpt:  三个API炸了一个  前言 **严禁利用本API从事 
+excerpt:  三个API炸了一个  前言 严禁利用本API从事任何违反中华人民共和国法律的行为 这个是之前搭WordPress站点的主机，因弃用了WordPress，遂用此机搭建API 现状 拥有3个API，2个可用   IP查询  延迟获取  EverydayOne Cat 随机图片(抢修中)  IP查询 位于https://api.catp.cc/ip 返回-JSON  { &quot;ip&quot;:...
 highlight_shrink: null
 katex: null
 keywords: null
@@ -20,11 +20,48 @@ tags: []
 title: '[持续更新]EdgeCatAPI公开版'
 top_img: null
 type: null
-updated: '2025-08-09T10:14:40.470+08:00'
+updated: '2025-08-09T10:26:24.365+08:00'
 ---
 > 三个API炸了一个
 
 # 前言
 
-**严禁利用本API从事
+**严禁利用本API从事任何违反中华人民共和国法律的行为**
+
+这个是之前搭WordPress站点的主机，因弃用了WordPress，遂用此机搭建API
+
+# 现状
+
+拥有3个API，2个可用
+
+- [x] IP查询
+- [x] 延迟获取
+- [ ] ~~EverydayOne Cat 随机图片~~(抢修中)
+
+# IP查询
+
+位于https://api.catp.cc/ip
+
+返回-JSON
+
+```JSON
+
+{
+"ip": "125.71.116.195",
+"timestamp": "2025-08-09 09:21:09",
+"user_agent": "Mozilla\/5.0 (iPad; CPU OS 16_6 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/16.6 Mobile\/15E148 Safari\/604.1",
+"method": "GET",
+"protocol": "HTTP\/1.1",
+"host": "api.catp.cc",
+"success": true
+}
+
+```
+
+
+# 延迟查询
+
+位于https://api.catp.cc/delay
+
+这里需要注意
 
