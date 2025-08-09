@@ -68,7 +68,7 @@ updated: '2025-08-09T11:15:45.328+08:00'
 
 返回-JSON
 
-
+```JSON
 {
 "status": "success",
 "timestamp": 1754708741,
@@ -82,12 +82,13 @@ updated: '2025-08-09T11:15:45.328+08:00'
 "request_method": "GET"
 }
 }
+```
 
 ---
 
-# EverydayOneCat (Broken)
+# EverydayOneCat Random Image (Broken)
 
-API已炸，正在抢修
+**API已炸，正在抢修**
 
 位于`https://api.catp.cc/gif/eoc`
 
