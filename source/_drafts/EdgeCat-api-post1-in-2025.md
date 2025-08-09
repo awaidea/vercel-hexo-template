@@ -2,7 +2,8 @@
 abbrlink: ''
 aplayer: null
 aside: null
-categories: []
+categories:
+- - 自建服务
 comments: null
 cover: https://ts3.tc.mm.bing.net/th/id/OIP-C.ETErxtwUHRrqwwtDUhJQwwHaEK?dpr=2&pid=ImgDetMain
 date: null
@@ -16,11 +17,12 @@ limit:
   value: null
 mathjax: null
 random: null
-tags: []
+tags:
+- API
 title: '[持续更新]EdgeCatAPI公开版'
 top_img: null
 type: null
-updated: '2025-08-09T11:15:12.114+08:00'
+updated: '2025-08-09T11:15:45.328+08:00'
 ---
 > 三个API炸了一个
 
