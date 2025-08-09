@@ -112,12 +112,7 @@
   border: 1px solid rgba(255, 255, 255, 0.05) !important;
 }
 
-/* ===== 内容背景透明 ===== */
-.card-widget > div:not([style*="background"]),
-.recent-post-item .recent-post-info,
-#article-container .post-content > *:not([style*="background"]) {
-  background: transparent !important;
-}
+
 
 /* ===== 特殊元素处理 ===== */
 .tag-cloud a,
@@ -145,3 +140,24 @@
        url('//at.alicdn.com/t/c/font_4979438_tfa9gci7bbs.ttf?t=1752999187614') format('truetype');
 }
 
+/* gallery样式调整 */
+.gallery-container {
+  margin: 15px 0;
+}
+
+.gallery-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+}
+
+/* 时间线内图片特殊样式 */
+.timeline .gallery-container {
+  margin-left: -10px;
+  margin-right: -10px;
+}
