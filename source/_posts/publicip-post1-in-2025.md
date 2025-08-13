@@ -6,7 +6,7 @@ categories:
 - - 网络
 comments: null
 cover: https://ts1.tc.mm.bing.net/th/id/R-C.817e3aee31fdcc8592cec9b333c8dd7e?rik=Oc%2fMCSugodyXAg&pid=ImgRaw&r=0
-date: null
+date: '2025-08-09T16:29:30.334+08:00'
 description: null
 excerpt:  IPv4，又是老生常谈的问题  起因 打算明年搞一台NAS，但考虑到IPv6的访问没有全覆盖，再加上我家也没有IPv6访问，于是找找自家IPv4能用不 查找 之前用EOP部署了一个GeoLocation，刚好来用用，比如我家IP是125.71.116.195  如果不知道的在local.catp.cc上查看 定性 网上找的到的分类国内一般是：   私网IP段  A类  10.0.0.0～10.2...
 highlight_shrink: null
@@ -22,7 +22,7 @@ tags:
 title: 浅浅检查下自家是不是完全公网IP(v4)
 top_img: null
 type: null
-updated: '2025-08-08T16:58:11.532+08:00'
+updated: '2025-08-13T16:41:38.805+08:00'
 ---
 > IPv4，又是老生常谈的问题
 
