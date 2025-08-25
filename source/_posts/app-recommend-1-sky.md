@@ -23,13 +23,13 @@ tags:
 title: 软件推荐:光遇乐谱
 top_img: null
 type: null
-updated: '2025-08-24T23:35:56.581+08:00'
+updated: '2025-08-25T12:14:54.277+08:00'
 ---
 > 抽象他妈给抽象开门，抽象到家了
 
 # 先看效果
 
-[Endless Noise](https://cloud.catp.cc/f/D1fD/Endless%20Noise.mp3)
+[Endless Noise](https://r2.catp.cc/endless-noise.mp3)
 
 谱曲神器没跑了
 
@@ -61,7 +61,4 @@ updated: '2025-08-24T23:35:56.581+08:00'
 当个练习器没问题，音游有点牵强，谱曲器......嘶......
 
 ~~**抽象**~~
-
-
-
 
