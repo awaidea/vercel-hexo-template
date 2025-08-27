@@ -21,7 +21,7 @@ tags:
 title: 使用Cap-Worker搭建自己的Cap PoW Captcha服务
 top_img: null
 type: null
-updated: '2025-08-26T15:03:35.616+08:00'
+updated: '2025-08-27T11:01:00.330+08:00'
 ---
 > Cloudflare Trustlite太智障，于是用Capjs自建人机验证码
 
@@ -77,4 +77,11 @@ HTML实例
   data-cap-api-endpoint="https://captcha.gurl.eu.org/api/">
 </cap-widget>
 ```
+
+<script src="https://captcha.gurl.eu.org/cap.min.js"></script>
+
+<cap-widget 
+id="cap" 
+data-cap-api-endpoint="https://capjs.catp.cc/api/">
+</cap-widget>
 
