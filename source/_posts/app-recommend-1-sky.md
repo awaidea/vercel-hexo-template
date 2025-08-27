@@ -23,13 +23,13 @@ tags:
 title: 软件推荐:光遇乐谱
 top_img: null
 type: null
-updated: '2025-08-25T12:14:54.277+08:00'
+updated: '2025-08-27T10:14:43.318+08:00'
 ---
 > 抽象他妈给抽象开门，抽象到家了
 
 # 先看效果
 
-[Endless Noise](https://r2.catp.cc/endless-noise.mp3)
+[Endless Noise](https://music.163.com/#/song?id=2740110520)
 
 谱曲神器没跑了
 
