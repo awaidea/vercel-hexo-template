@@ -5,7 +5,7 @@ aside: null
 categories: []
 comments: null
 cover: https://capjs.js.org/logo.png
-date: null
+date: '2025-08-27'
 description: null
 excerpt:  Cloudflare Trustlite太智障，于是用Capjs自建人机验证码  何为Capjs A modern, lightning-quick PoW captcha Cap is a lightweight, modern open-source CAPTCHA alternative using proof-of-work 何为 Cap-Worker CAP CAPTCHA 是基于 C...
 highlight_shrink: null
@@ -21,7 +21,7 @@ tags:
 title: 使用Cap-Worker搭建自己的Cap PoW Captcha服务
 top_img: null
 type: null
-updated: '2025-08-27T11:01:00.330+08:00'
+updated: '2026-01-25T19:54:07.154+08:00'
 ---
 > Cloudflare Trustlite太智障，于是用Capjs自建人机验证码
 
@@ -84,4 +84,3 @@ HTML实例
 id="cap" 
 data-cap-api-endpoint="https://capjs.catp.cc/api/">
 </cap-widget>
-
