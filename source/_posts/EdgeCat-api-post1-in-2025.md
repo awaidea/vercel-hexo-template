@@ -8,7 +8,7 @@ comments: null
 cover: https://ts3.tc.mm.bing.net/th/id/OIP-C.ETErxtwUHRrqwwtDUhJQwwHaEK?dpr=2&pid=ImgDetMain
 date: '2025-08-09T16:29:30.334+08:00'
 description: null
-excerpt:  三个API炸了一个  前言 严禁利用本API从事任何违反中华人民共和国法律的行为 这个是之前搭WordPress站点的主机，因弃用了WordPress，遂用此机搭建API 现状 拥有3个API，2个可用   IP查询  延迟获取  EverydayOne Cat 随机图片(抢修中)  IP查询 位于 https://api.catp.cc/ip 返回-JSON { &quot;ip&quot;:...
+excerpt: ''
 highlight_shrink: null
 katex: null
 keywords: null
@@ -22,7 +22,7 @@ tags:
 title: '[持续更新]EdgeCatAPI公开版'
 top_img: null
 type: null
-updated: '2025-08-13T16:31:36.461+08:00'
+updated: '2026-06-01T17:27:32.990+08:00'
 ---
 > 三个API炸了一个
 
@@ -32,17 +32,19 @@ updated: '2025-08-13T16:31:36.461+08:00'
 
 这个是之前搭WordPress站点的主机，因弃用了WordPress，遂用此机搭建API
 
+统一基础URL：`api.catp.cc`
+
 # 现状
 
 拥有3个API，2个可用
 
-- [X] IP查询
-- [X] 延迟获取
+- [x] IP查询
+- [x] 延迟获取
 - [ ] ~~EverydayOne Cat 随机图片~~(抢修中)
 
 # IP查询
 
-位于 `https://api.catp.cc/ip`
+Endpoint `GET /ip
 
 返回-JSON
 
@@ -62,9 +64,10 @@ updated: '2025-08-13T16:31:36.461+08:00'
 
 # 延迟查询
 
-位于 `https://api.catp.cc/delay`
+Endpoint `GET /delay`
 
-这里需要注意，获取延迟需要在 `delay`后加上 `?<url>`
+参数：
+url  必须  请求url
 
 返回-JSON
 
@@ -88,11 +91,11 @@ updated: '2025-08-13T16:31:36.461+08:00'
 
 # EverydayOneCat Random Image (Broken)
 
-**API已炸，正在抢修**
+**此API已炸，正在抢修**
 
-位于 `https://api.catp.cc/gif/eoc`
+Endpoint `GET /eoc`
 
-返回-Image（自动重定向）
+返回-Image/GIF（自动重定向）
 
 ---
 
@@ -103,3 +106,4 @@ updated: '2025-08-13T16:31:36.461+08:00'
 # 帮助
 
 直接评论本文或者发送给 `i@catp.cc`
+
