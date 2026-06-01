@@ -22,7 +22,7 @@ tags:
 title: '[持续更新]EdgeCatAPI公开版'
 top_img: null
 type: null
-updated: '2026-06-01T17:27:32.990+08:00'
+updated: '2026-06-01T17:29:20.167+08:00'
 ---
 > 三个API炸了一个
 
@@ -44,7 +44,7 @@ updated: '2026-06-01T17:27:32.990+08:00'
 
 # IP查询
 
-Endpoint `GET /ip
+Endpoint `GET /ip`
 
 返回-JSON
 
