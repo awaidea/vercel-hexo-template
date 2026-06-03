@@ -1,13 +1,14 @@
 ---
 date: '2025-06-07T22:17:49+08:00'
-excerpt: 说说已永久迁移到https://my.catp.cc本站不再更新说说         ...
+excerpt: ''
 title: 说说
-updated: '2025-08-29T11:49:22.257+08:00'
+updated: '2026-06-03T21:14:23.680+08:00'
 ---
-**说说已永久迁移到[https://my.catp.cc](https://my.catp.cc)本站不再更新说说**
+### 我的动态
 
-<div id="qexot" class="tag-plugin timeline"></div>
-<script src="https://gcore.jsdelivr.net/gh/MSCMDD/Qexo-Talks@main/Stellar/qexo_talk.js"></script>
-<link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/MSCMDD/Qexo-Talks@main/Stellar/qexo_talk.css">
-<script>showQexoTalks("qexot", "https://panel.catp.cc", 5)</script>
+<iframe allowfullscreen sandbox="allow-top-navigation allow-scripts allow-popups allow-popups-to-escape-sandbox" style="max-width:100vw;max-height:100vh;" width="400" height="800" src="https://mastofeed.com/apiv2/feed?userurl=https%3A%2F%2Fc7.io%2Fusers%2Fec0819&theme=auto&size=100&header=true&replies=false&boosts=false&bg2=%230ae2ff&link=%23ffd500">
+
+</iframe>
+
+> GG54OCBHXOYPOL7T
 
