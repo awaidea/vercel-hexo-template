@@ -20,11 +20,13 @@ tags: []
 title: null
 top_img: null
 type: null
-updated: '2026-07-20T21:10:10.410+08:00'
+updated: '2026-07-20T21:12:51.617+08:00'
 ---
 ## What's this?
 
 Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical site)
+
+![](https://github.com/awaidea/pics/raw/main/26/7/671d0463c1d785bf955a6cb0416a7a57.png)
 
 ## Get Started
 
@@ -41,4 +43,3 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
 ### Step by step
 
 - 1. 检查前置状态
-
