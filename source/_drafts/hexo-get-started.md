@@ -20,13 +20,12 @@ tags: []
 title: null
 top_img: null
 type: null
-updated: '2026-07-20T21:12:51.617+08:00'
+updated: '2026-07-20T21:28:29.344+08:00'
 ---
 ## What's this?
 
 Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical site)
-
-![](https://github.com/awaidea/pics/raw/main/26/7/671d0463c1d785bf955a6cb0416a7a57.png)
+![](https://bgithub.xyz/awaidea/pics/raw/main/26/7/671d0463c1d785bf955a6cb0416a7a57.png)
 
 ## Get Started
 
@@ -34,7 +33,7 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
 
 需要准备这些东西喵：
 
-- `NodeJS` >=16 (Recommend) [Download](https://nodejs.cn/en/download)
+- `NodeJS` >=22 (Recommend) [Download](https://nodejs.cn/en/download)
 - `Git` for Linux/Windows  [Download Windows Edition](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 - `GitHub`/`Gitee`Account
 - `E-mail`*1/`EdgeOne`Acconut
@@ -42,4 +41,20 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
 
 ### Step by step
 
-- 1. 检查前置状态
+- 1. 检查前置状态,结果参考下图
+     - npm:`npm -v`
+     - Git:`git -v`
+     - NodeJS:`node -v`
+       ![](https://github.com/awaidea/pics/raw/main/26/7/fddc68666e2d3f025856fcc1828a1a8f.png)
+- 2. 安装Hexo-CLI
+     通过终端执行`npm install hexo-cli -g`
+     ![3.png](https://github.com/awaidea/pics/raw/main/26/7/ec90ecef6d8b061ec4bbb6f39fd660c6.png)
+- 3. 初始化Hexo
+     - 
+
+---
+
+---
+
+---
+
