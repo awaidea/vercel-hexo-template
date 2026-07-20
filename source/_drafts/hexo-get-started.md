@@ -20,12 +20,12 @@ tags: []
 title: null
 top_img: null
 type: null
-updated: '2026-07-20T21:41:12.979+08:00'
+updated: '2026-07-20T21:41:44.044+08:00'
 ---
 ## What's this?
 
 Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical site)
-![](https://bgithub.xyz/awaidea/pics/raw/main/26/7/671d0463c1d785bf955a6cb0416a7a57.png)
+![](https://github.com/awaidea/pics/raw/main/26/7/671d0463c1d785bf955a6cb0416a7a57.png)
 
 ## Get Started
 
