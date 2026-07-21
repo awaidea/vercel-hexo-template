@@ -22,7 +22,7 @@ tags:
 title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-21T18:00:38.316+08:00'
+updated: '2026-07-21T18:06:34.214+08:00'
 ---
 ## What's this?
 
@@ -45,7 +45,7 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
 - `E-mail`*1/`EdgeOne`Acconut
 - 手
 
-### Step by step
+### Set up
 
 - 1. 检查前置状态,结果参考下图
      - npm:`npm -v`
@@ -56,11 +56,24 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
      通过终端执行`npm install hexo-cli -g`
      ![3.png](https://s4.catp.cc/2026/07/21/3.png)
 - 3. 初始化Hexo
-     依次执行：
+     生成Hexo工作区：
      
      ```
      hexo init <folder>
      cd <folder>
      npm install
      ```
+     
+     构建Hexo&启动本地服务器
+     
+     ```
+     hexo cl&&hexo g&&hexo s
+     ```
+  
+  效果:
+  ![5.png](https://s4.catp.cc/2026/07/21/5.png)
+
+### Make it online
+
+- 1. 检查文件夹结构
 
