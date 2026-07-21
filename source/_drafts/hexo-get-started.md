@@ -22,7 +22,7 @@ tags:
 title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-21T18:06:34.214+08:00'
+updated: '2026-07-21T18:12:15.376+08:00'
 ---
 ## What's this?
 
@@ -40,6 +40,7 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
 {% endnote %}
 
 - `NodeJS` >=22 (Recommend) [Download](https://nodejs.cn/en/download)
+- 一个位于[PSL](https://publicsuffix.org/list/public_suffix_list.dat)中的域名
 - `Git` for Linux/Windows  [Download Windows Edition](https://registry.npmmirror.com/binary.html?path=git-for-windows/)
 - `GitHub`/`Gitee`Account
 - `E-mail`*1/`EdgeOne`Acconut
@@ -57,23 +58,30 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
      ![3.png](https://s4.catp.cc/2026/07/21/3.png)
 - 3. 初始化Hexo
      生成Hexo工作区：
-     
+
      ```
      hexo init <folder>
      cd <folder>
      npm install
      ```
-     
+
      构建Hexo&启动本地服务器
-     
+
      ```
      hexo cl&&hexo g&&hexo s
      ```
-  
+
   效果:
   ![5.png](https://s4.catp.cc/2026/07/21/5.png)
 
 ### Make it online
 
 - 1. 检查文件夹结构
+     ![7.png](https://s4.catp.cc/2026/07/21/7.png)
+     功能对应？
 
+
+| col1 | col2 | col3 |
+| ---- | ---- | ---- |
+|      |      |      |
+|      |      |      |
