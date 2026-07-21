@@ -22,7 +22,7 @@ tags:
 title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-21T18:16:23.971+08:00'
+updated: '2026-07-21T18:18:48.793+08:00'
 ---
 ## What's this?
 
@@ -84,5 +84,6 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
 | --------------------- | ------------------------------------------------------------ |
 | _config.yml           | 站点主要配置信息                                             |
 | _config.landscape.yml | 默认主题LandScape的配置文件，如果你不使用LandScape，留空即可 |
-| *.json                |                                                              |
-|                       |                                                              |
+| *.json                | 构建配置，一般无需修改                                       |
+| source/*              | 资源文件(夹)，里面可以装你的文章/草稿/自定义文件之类的       |
+| themes/*              | 主题文件夹，用于存放主题                                     |
