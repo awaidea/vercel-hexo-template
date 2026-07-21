@@ -22,7 +22,7 @@ tags:
 title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-21T18:24:04.235+08:00'
+updated: '2026-07-21T18:41:33.754+08:00'
 ---
 ## What's this?
 
@@ -58,19 +58,19 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
      ![3.png](https://s4.catp.cc/2026/07/21/3.png)
 - 3. 初始化Hexo
      生成Hexo工作区：
-
+     
      ```
      hexo init <folder>
      cd <folder>
      npm install
      ```
-
+     
      构建Hexo&启动本地服务器
-
+     
      ```
      hexo cl&&hexo g&&hexo s
      ```
-
+  
   效果:
   ![5.png](https://s4.catp.cc/2026/07/21/5.png)
 
@@ -80,13 +80,31 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
      ![7.png](https://s4.catp.cc/2026/07/21/7.png)
      功能对应？
 
-| File Name             | Usage                                                                                                            |
-| --------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| _config.yml           | 站点主要配置信息                                                                                                 |
-| _config.landscape.yml | 默认主题LandScape的配置文件，如果你不使用LandScape，留空即可                                                     |
-| *.json                | 构建配置，一般无需修改                                                                                           |
-| source/*              | 资源文件(夹)，里面可以装你的文章/草稿/自定义文件之类的                                                           |
-| themes/*              | 主题文件夹，用于存放主题                                                                                         |
-| scaffolds/*           | 可以理解成模板文件夹，但非必要尽量不要修改                                                                       |
-| public/*              | 构建目录，后面会讲到，这里存放着你站点构建产物                                                                   |
+| File Name             | Usage                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
+| _config.yml           | 站点主要配置信息                                                                                         |
+| _config.landscape.yml | 默认主题LandScape的配置文件，如果你不使用LandScape，留空即可                                             |
+| *.json                | 构建配置，一般无需修改                                                                                   |
+| source/*              | 资源文件(夹)，里面可以装你的文章/草稿/自定义文件之类的                                                   |
+| themes/*              | 主题文件夹，用于存放主题                                                                                 |
+| scaffolds/*           | 可以理解成模板文件夹，但非必要尽量不要修改                                                               |
+| public/*              | 构建目录，后面会讲到，这里存放着你站点构建产物                                                           |
 | node_modules/*        | Node包文件夹，存放站点构建所用的工具/依赖包，**切记：若要安装/卸载包，请使用 `npm`操作，万不可手动删除** |
+
+{% note info simple %}
+node_modules: 如果你正在使用Butterfly主题，对于使用`npm`的用户来讲，你的`Pug`和`Stylus`就会存储在这里(`pnpm`另论)，用途你自己品
+{% endnote %}
+
+- 2. 配置站点信息
+     
+     > 官方文档[https://hexo.io/zh-cn/docs/configuration](https://hexo.io/zh-cn/docs/configuration)
+     > 
+     > 不是我懒，是这字太多码起来把我的猫爪码坏了咋办，你说呢，喵~
+     
+     截图摘要:
+     ![1-1.png](https://s4.catp.cc/2026/07/21/1-1.png)
+     ![1-2.png](https://s4.catp.cc/2026/07/21/1-2.png)
+     ![1-3.png](https://s4.catp.cc/2026/07/21/1-3.png)
+     ![1-4.png](https://s4.catp.cc/2026/07/21/1-4.png)
+     ![1-5.png](https://s4.catp.cc/2026/07/21/1-5.png)
+
