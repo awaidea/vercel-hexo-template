@@ -22,7 +22,7 @@ tags:
 title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-21T19:14:32.224+08:00'
+updated: '2026-07-21T19:15:25.411+08:00'
 ---
 ## What's this?
 
