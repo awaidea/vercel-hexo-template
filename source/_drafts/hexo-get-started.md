@@ -5,7 +5,7 @@ aside: null
 categories:
 - - 建站
 comments: null
-cover: ''
+cover: https://s4.catp.cc/2026/07/21/%E6%89%B9%E6%B3%A8%202026-07-20%20211158.png
 date: null
 description: null
 excerpt: '...'
@@ -22,7 +22,7 @@ tags:
 title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-21T21:09:30.203+08:00'
+updated: '2026-07-21T21:11:28.411+08:00'
 ---
 ## What's this?
 
@@ -195,8 +195,6 @@ hexo new page [name] # 新页面
 ```
 
 直接编辑`*.md`文件就可以用Markdown写作啦
-
-
 
 ## Add-ons
 
