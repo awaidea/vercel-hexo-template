@@ -22,7 +22,7 @@ tags:
 title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-21T18:12:15.376+08:00'
+updated: '2026-07-21T18:16:23.971+08:00'
 ---
 ## What's this?
 
@@ -54,7 +54,7 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
      - NodeJS:`node -v`
        ![2.png](https://s4.catp.cc/2026/07/21/2.png)
 - 2. 安装Hexo-CLI
-     通过终端执行`npm install hexo-cli -g`
+     通过终端执行 `npm install hexo-cli -g`
      ![3.png](https://s4.catp.cc/2026/07/21/3.png)
 - 3. 初始化Hexo
      生成Hexo工作区：
@@ -80,8 +80,9 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
      ![7.png](https://s4.catp.cc/2026/07/21/7.png)
      功能对应？
 
-
-| col1 | col2 | col3 |
-| ---- | ---- | ---- |
-|      |      |      |
-|      |      |      |
+| File Name             | Usage                                                        |
+| --------------------- | ------------------------------------------------------------ |
+| _config.yml           | 站点主要配置信息                                             |
+| _config.landscape.yml | 默认主题LandScape的配置文件，如果你不使用LandScape，留空即可 |
+| *.json                |                                                              |
+|                       |                                                              |
