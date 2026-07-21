@@ -1,8 +1,9 @@
 ---
-abbrlink: ''
+abbrlink: 一个简易的Hexo Blog搭建教程
 aplayer: null
 aside: null
-categories: []
+categories:
+- - 建站
 comments: null
 cover: ''
 date: null
@@ -16,16 +17,18 @@ limit:
   value: null
 mathjax: null
 random: null
-tags: []
-title: null
+tags:
+- hexo
+title: 从Hexo出发，写下你的Hello World!
 top_img: null
 type: null
-updated: '2026-07-20T21:41:44.044+08:00'
+updated: '2026-07-21T18:00:38.316+08:00'
 ---
 ## What's this?
 
 Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical site)
-![](https://github.com/awaidea/pics/raw/main/26/7/671d0463c1d785bf955a6cb0416a7a57.png)
+
+<a href="https://s4.catp.cc/2026/07/21/批注 2026-07-20 211158.png"><img                                                            src="https://s4.catp.cc/2026/07/21/批注 2026-07-20 211158.png"></a>
 
 ## Get Started
 
@@ -48,23 +51,16 @@ Hexo is a *“快速、简洁且高效的博客框架”*(Copied from offical si
      - npm:`npm -v`
      - Git:`git -v`
      - NodeJS:`node -v`
-       ![](https://github.com/awaidea/pics/raw/main/26/7/fddc68666e2d3f025856fcc1828a1a8f.png)
+       ![2.png](https://s4.catp.cc/2026/07/21/2.png)
 - 2. 安装Hexo-CLI
      通过终端执行`npm install hexo-cli -g`
-     ![3.png](https://github.com/awaidea/pics/raw/main/26/7/ec90ecef6d8b061ec4bbb6f39fd660c6.png)
+     ![3.png](https://s4.catp.cc/2026/07/21/3.png)
 - 3. 初始化Hexo
-  
-  - `hexo init <folder>`
-  - `cd <folder>`
-  - `npm install`
-
----
-
----
-
----
-
----
-
----
+     依次执行：
+     
+     ```
+     hexo init <folder>
+     cd <folder>
+     npm install
+     ```
 
